@@ -1,6 +1,9 @@
 body {
+    overflow-x: hidden;
+    scrollbar-width: 0%;
+    color: #B5E2FA;
     margin: 0%;
-    background-color: rgb(0, 0, 0);
+    background-color: #F9F7F3;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -10,8 +13,8 @@ a {
 
 ._head {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: rgb(250, 250, 250);
-    position: fixed;
+    background-color: #EDDEA4;
+    color: black;
     width: 100%;
     height: 13%;
     display: flex;
@@ -19,7 +22,8 @@ a {
 }
 
 .kontakt {
-    margin-top: 1%;
+    margin-top: 3%;
+    margin-left: 2%;
     align-items: center;
     width: 20%;
     height: 100%;
@@ -27,7 +31,7 @@ a {
 }
 
 .KT {
-    font-size: 100%;
+    font-size: calc(10px + (6 + 6 * 0.7) * ((100vw - 350px) / 1180));
 }
 
 .messenger {
@@ -58,9 +62,9 @@ a {
 }
 
 .main-picture {
-    padding-top: 17%;
+    padding-top: 6%;
     width: 100%;
-    height: 600px;
+    height: 800px;
 }
 
 .picture {
@@ -96,6 +100,7 @@ a {
 }
 
 li {
+    font-weight: 700;
     margin-bottom: 3%;
 }
 
@@ -107,6 +112,7 @@ li {
 }
 
 .bt1 {
+    font-weight: 500;
     background-color: rgb(143, 75, 75);
     border-radius: 20%;
     width: 25%;
@@ -120,4 +126,320 @@ li {
     width: 25%;
     height: 120%;
     border: 15px;
+}
+
+.avto {
+    margin-top: 5%;
+    font-size: 35px;
+    display: flex;
+    color: rgb(255, 0, 0);
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-container {
+    width: 100%;
+    height: 600px;
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.blockSlider {
+    margin-top: 2%;
+    display: flex;
+    max-width: 1700px;
+    max-height: 1000px;
+    width: 100%;
+    height: 80%;
+    border: 1px solid black;
+    border-radius: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.FullArea {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.pointsAreaSize {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 5%;
+}
+
+.point {
+    display: flex;
+    width: 12px;
+    height: 12px;
+    background: rgb(229, 229, 229);
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.point:hover {
+    background: rgb(160, 167, 243);
+}
+
+.imagesArea {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.imageSlider {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    animation-name: Animation;
+    animation-duration: 1s;
+}
+
+.activeImage {
+    background: rgb(115, 126, 250);
+    display: flex;
+    border-radius: 20px;
+}
+
+.btnsAreaSize {
+    position: absolute;
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+}
+
+i.fa.fa-angle-left,
+i.fa.fa-angle-right {
+    color: rgb(115, 126, 250);
+    font-size: 24px;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.blockArrow {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: 1ps solid white;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.blockArrow:hover {
+    background: rgba(39, 39, 39, 0.59);
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+.blockArrow:active {
+    background: rgba(16, 16, 16, 0.59);
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+.FullArea {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.pointsAreaSize {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 5%;
+}
+
+.point {
+    display: flex;
+    width: 12px;
+    height: 12px;
+    background: rgb(229, 229, 229);
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.point:hover {
+    background: rgb(160, 167, 243);
+}
+
+.imagesArea {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.imageSlider {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    animation-name: Animation;
+    animation-duration: 1s;
+}
+
+.activeImage {
+    background: rgb(255, 0, 0);
+    display: flex;
+    border-radius: 20px;
+}
+
+.btnsAreaSize {
+    position: absolute;
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+}
+
+i.fa.fa-angle-left,
+i.fa.fa-angle-right {
+    color: rgb(255, 0, 0);
+    font-size: 24px;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.blockArrow {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 1ps solid white;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.blockArrow:hover {
+    background: rgba(39, 39, 39, 0.59);
+    border: 1px solid white;
+    color: rgb(188, 27, 27);
+    cursor: pointer;
+}
+
+.blockArrow:active {
+    background: rgba(16, 16, 16, 0.59);
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+.podval {
+    margin-top: 3%;
+    width: 100%;
+    height: 270px;
+    background-color: rgb(73, 74, 76);
+}
+
+.osn {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left {
+    margin-left: 2%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.tex {
+    width: 50%;
+    height: 80%;
+}
+
+h2 {
+    color: #B5E2FA;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+h2:hover {
+    color: red;
+}
+
+.grd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Grodno {
+    -webkit-text-stroke: 0.5px red;
+    margin-top: 5%;
+    font-size: 180%;
+    font-weight: 500;
+}
+
+.text1 {
+    margin-left: 7%;
+}
+
+.mes {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.right {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.icon1 {
+    display: flex;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon2 {
+    display: flex;
+    height: 50%;
+    width: 80%;
+    margin-left: 10%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.element-animation {
+    /* Скроем элемент в начальном состоянии */
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.element-animation.element-show {
+    opacity: 1;
+    transition: all 3s;
+    transform: translateY(0%);
 }
