@@ -1,336 +1,717 @@
-body {
-    overflow-x: hidden;
-    scrollbar-width: 0%;
-    color: #B5E2FA;
-    margin: 0%;
-    background-color: #F9F7F3;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+@media (max-width: 1920px) {
+    body {
+        overflow-x: hidden;
+        scrollbar-width: 0%;
+        color: #B5E2FA;
+        margin: 0%;
+        background-color: #F9F7F3;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    a {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    ._head {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: #EDDEA4;
+        color: black;
+        width: 100%;
+        height: 13%;
+        display: flex;
+        margin-left: 0%;
+    }
+    .kontakt {
+        margin-top: 3%;
+        margin-left: 2%;
+        align-items: center;
+        width: 20%;
+        height: 100%;
+        display: block;
+    }
+    .KT {
+        font-size: calc(10px + (6 + 6 * 0.7) * ((100vw - 350px) / 1180));
+    }
+    .messenger {
+        margin-top: 2%;
+        margin-left: 1%;
+        display: flex;
+        justify-content: space-between;
+        width: 20%;
+    }
+    .main-icon {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 20%;
+    }
+    .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #FFEFBA;
+        transform: translateX(-100%);
+        transition: transform 0.5s;
+    }
+    .menu.active {
+        transform: translateX(0);
+    }
+    .menu li {
+        list-style-type: none;
+    }
+    .menu-btn {
+        width: 0%;
+        height: 0%;
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+    }
+    .menu-btn span {
+        width: 30px;
+        height: 2px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #222222;
+        transition: all 0.5s;
+    }
+    .menu-btn span:nth-of-type(2) {
+        top: calc(50% - 5px);
+    }
+    .menu-btn span:nth-of-type(3) {
+        top: calc(50% + 5px);
+    }
+    .menu-btn.active span:nth-of-type(1) {
+        display: none;
+    }
+    .menu-btn.active span:nth-of-type(2) {
+        top: 50%;
+        transform: translate(-50%, 0%) rotate(45deg);
+    }
+    .menu-btn.active span:nth-of-type(3) {
+        top: 50%;
+        transform: translate(-50%, 0%) rotate(-45deg);
+    }
+    .link {
+        color: black;
+        font-size: 23px;
+        width: 40%;
+        margin-left: 2%;
+        margin-right: 2%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .main-picture {
+        padding-top: 6%;
+        width: 100%;
+        height: 800px;
+    }
+    .picture {
+        width: 100%;
+        height: 100%;
+        background-image: url(/picture/BUGATTI_Divo_2019_552153_1920x1080.jpg);
+        background-size: cover;
+    }
+    .label {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+    }
+    .oname {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        display: flex;
+        color: rgb(231, 54, 54);
+        justify-content: center;
+        align-items: center;
+        font-size: 44px;
+        width: 100%;
+        height: 33%;
+    }
+    .spis {
+        list-style: square;
+        font-size: 22px;
+        color: rgb(231, 54, 54);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    li {
+        font-weight: 700;
+        margin-bottom: 3%;
+    }
+    .btt {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+    .bt1 {
+        font-weight: 500;
+        background-color: rgb(143, 75, 75);
+        border-radius: 20%;
+        width: 25%;
+        height: 120%;
+        border: 15px;
+    }
+    .bt1:hover {
+        background-color: rgb(231, 54, 54);
+        border-radius: 0%;
+        width: 25%;
+        height: 120%;
+        border: 15px;
+    }
+    .avto {
+        margin-top: 5%;
+        font-size: 35px;
+        display: flex;
+        color: rgb(255, 0, 0);
+        align-items: center;
+        justify-content: center;
+    }
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .cars {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .block {
+        color: black;
+        background-color: #EDDEA4;
+        border: 2px solid rgb(73, 74, 76);
+        margin-left: 2%;
+        margin-top: 2%;
+        width: 30%;
+        height: 500px;
+    }
+    .block:hover {
+        color: black;
+        background-color: #EDDEA4;
+        border: 3px solid rgb(253, 2, 2);
+        margin-left: 2%;
+        margin-top: 2%;
+        width: 30%;
+        height: 500px;
+    }
+    .part1 {
+        margin: 1% 0% 0% 1%;
+        width: 98%;
+        height: 70%;
+    }
+    .imgggg {
+        width: 100%;
+        height: 100%;
+    }
+    .part2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 30%;
+    }
+    .glname {
+        font-size: 22px;
+    }
+    .glname:hover {
+        font-size: 23px;
+        font-weight: 500;
+    }
+    .name {
+        display: flex;
+        width: 98%;
+        height: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .carek {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .cost {
+        text-align: center;
+        font-size: 25px;
+        color: rgb(201, 73, 141);
+    }
+    .bt2 {
+        background-color: rgb(73, 74, 76);
+        border: 2px solid rgb(201, 73, 141);
+    }
+    .bt2:hover {
+        background-color: rgb(73, 74, 76);
+        border-radius: 5px;
+        border: 2px solid red;
+    }
+    .namecont {
+        margin-top: 3%;
+        margin-bottom: 2%;
+        font-size: 30px;
+        color: black;
+        font-weight: 700;
+        text-align: center;
+    }
+    .podval {
+        margin-top: 3%;
+        width: 100%;
+        height: 270px;
+        background-color: rgb(73, 74, 76);
+    }
+    .osn {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .left {
+        margin-left: 2%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 50%;
+    }
+    .tex {
+        width: 50%;
+        height: 80%;
+    }
+    h2 {
+        color: #B5E2FA;
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+    h2:hover {
+        color: red;
+    }
+    .grd {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    .Grodno {
+        -webkit-text-stroke: 0.5px red;
+        margin-top: 5%;
+        font-size: 180%;
+        font-weight: 500;
+    }
+    .text1 {
+        margin-left: 7%;
+    }
+    .mes {
+        width: 100%;
+        height: 30%;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .right {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .icon1 {
+        display: flex;
+        height: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+    .icon2 {
+        display: flex;
+        height: 50%;
+        width: 80%;
+        margin-left: 10%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .element-animation {
+        /* Скроем элемент в начальном состоянии */
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    .element-animation.element-show {
+        opacity: 1;
+        transition: all 3s;
+        transform: translateY(0%);
+    }
 }
 
-a {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-._head {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #EDDEA4;
-    color: black;
-    width: 100%;
-    height: 13%;
-    display: flex;
-    margin-left: 0%;
-}
-
-.kontakt {
-    margin-top: 3%;
-    margin-left: 2%;
-    align-items: center;
-    width: 20%;
-    height: 100%;
-    display: block;
-}
-
-.KT {
-    font-size: calc(10px + (6 + 6 * 0.7) * ((100vw - 350px) / 1180));
-}
-
-.messenger {
-    margin-top: 2%;
-    margin-left: 1%;
-    display: flex;
-    justify-content: space-between;
-    width: 20%;
-}
-
-.main-icon {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    width: 20%;
-}
-
-.link {
-    color: black;
-    font-size: 23px;
-    width: 40%;
-    margin-left: 2%;
-    margin-right: 2%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.main-picture {
-    padding-top: 6%;
-    width: 100%;
-    height: 800px;
-}
-
-.picture {
-    width: 100%;
-    height: 100%;
-    background-image: url(/picture/BUGATTI_Divo_2019_552153_1920x1080.jpg);
-    background-size: cover;
-}
-
-.label {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    height: 100%;
-}
-
-.oname {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    display: flex;
-    color: rgb(231, 54, 54);
-    justify-content: center;
-    align-items: center;
-    font-size: 44px;
-    width: 100%;
-    height: 33%;
-}
-
-.spis {
-    list-style: square;
-    font-size: 22px;
-    color: rgb(231, 54, 54);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-li {
-    font-weight: 700;
-    margin-bottom: 3%;
-}
-
-.btt {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-}
-
-.bt1 {
-    font-weight: 500;
-    background-color: rgb(143, 75, 75);
-    border-radius: 20%;
-    width: 25%;
-    height: 120%;
-    border: 15px;
-}
-
-.bt1:hover {
-    background-color: rgb(231, 54, 54);
-    border-radius: 0%;
-    width: 25%;
-    height: 120%;
-    border: 15px;
-}
-
-.avto {
-    margin-top: 5%;
-    font-size: 35px;
-    display: flex;
-    color: rgb(255, 0, 0);
-    align-items: center;
-    justify-content: center;
-}
-
-.container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.cars {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.block {
-    color: black;
-    background-color: #EDDEA4;
-    border: 2px solid rgb(73, 74, 76);
-    margin-left: 2%;
-    margin-top: 2%;
-    width: 30%;
-    height: 500px;
-}
-
-.block:hover {
-    color: black;
-    background-color: #EDDEA4;
-    border: 3px solid rgb(253, 2, 2);
-    margin-left: 2%;
-    margin-top: 2%;
-    width: 30%;
-    height: 500px;
-}
-
-.part1 {
-    margin: 1% 0% 0% 1%;
-    width: 98%;
-    height: 70%;
-}
-
-.imgggg {
-    width: 100%;
-    height: 100%;
-}
-
-.part2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 30%;
-}
-
-.glname {
-    font-size: 22px;
-}
-
-.glname:hover {
-    font-size: 23px;
-    font-weight: 500;
-}
-
-.name {
-    display: flex;
-    width: 98%;
-    height: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.carek {
-    font-size: 16px;
-    font-weight: 600;
-}
-
-.cost {
-    text-align: center;
-    font-size: 25px;
-    color: rgb(201, 73, 141);
-}
-
-.bt2 {
-    background-color: rgb(73, 74, 76);
-    border: 2px solid rgb(201, 73, 141);
-}
-
-.bt2:hover {
-    background-color: rgb(73, 74, 76);
-    border-radius: 5px;
-    border: 2px solid red;
-}
-
-.namecont {
-    margin-top: 3%;
-    margin-bottom: 2%;
-    font-size: 30px;
-    color: black;
-    font-weight: 700;
-    text-align: center;
-}
-
-.podval {
-    margin-top: 3%;
-    width: 100%;
-    height: 270px;
-    background-color: rgb(73, 74, 76);
-}
-
-.osn {
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.left {
-    margin-left: 2%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 50%;
-}
-
-.tex {
-    width: 50%;
-    height: 80%;
-}
-
-h2 {
-    color: #B5E2FA;
-    margin-top: 4%;
-    margin-bottom: 4%;
-}
-
-h2:hover {
-    color: red;
-}
-
-.grd {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-}
-
-.Grodno {
-    -webkit-text-stroke: 0.5px red;
-    margin-top: 5%;
-    font-size: 180%;
-    font-weight: 500;
-}
-
-.text1 {
-    margin-left: 7%;
-}
-
-.mes {
-    width: 100%;
-    height: 30%;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.right {
-    width: 30%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.icon1 {
-    display: flex;
-    height: 50%;
-    justify-content: center;
-    align-items: center;
-}
-
-.icon2 {
-    display: flex;
-    height: 50%;
-    width: 80%;
-    margin-left: 10%;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.element-animation {
-    /* Скроем элемент в начальном состоянии */
-    opacity: 0;
-    transform: translateY(20px);
-}
-
-.element-animation.element-show {
-    opacity: 1;
-    transition: all 3s;
-    transform: translateY(0%);
+@media (max-width: 420px) {
+    body {
+        overflow-x: hidden;
+        scrollbar-width: 0%;
+        color: #B5E2FA;
+        margin: 0%;
+        background-color: #F9F7F3;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    a {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    ._head {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: #EDDEA4;
+        color: black;
+        width: 100%;
+        height: 14%;
+        display: flex;
+        margin-left: 0%;
+    }
+    .kontakt {
+        margin-top: 3%;
+        margin-left: 2%;
+        align-items: center;
+        width: 25%;
+        height: 100%;
+        display: block;
+    }
+    .KT {
+        font-size: calc(10px + (6 + 6 * 0.7) * ((100vw - 350px) / 1180));
+    }
+    .messenger {
+        margin-top: 2%;
+        margin-left: 1%;
+        display: flex;
+        justify-content: space-between;
+        width: 20%;
+    }
+    .main-icon {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 27%;
+    }
+    .link {
+        display: none;
+        visibility: hidden;
+        color: black;
+        font-size: 5px;
+        width: 29%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    li {
+        color: #de0707;
+    }
+    .menu {
+        color: black;
+        position: fixed;
+        width: 100%;
+        height: 25%;
+        background: #FFEFBA;
+        transform: translateX(-100%);
+        transition: transform 0.5s;
+    }
+    .menu.active {
+        text-decoration: none;
+        transform: translateX(0);
+    }
+    .menu li {
+        list-style-type: none;
+        text-decoration: none;
+    }
+    .menu-btn {
+        width: 50px;
+        height: 60px;
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+    }
+    .menu-btn span {
+        width: 30px;
+        height: 2px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #222222;
+        transition: all 0.5s;
+    }
+    .menu-btn span:nth-of-type(2) {
+        top: calc(50% - 5px);
+    }
+    .menu-btn span:nth-of-type(3) {
+        top: calc(50% + 5px);
+    }
+    .menu-btn.active span:nth-of-type(1) {
+        display: none;
+    }
+    .menu-btn.active span:nth-of-type(2) {
+        top: 50%;
+        transform: translate(-50%, 0%) rotate(45deg);
+    }
+    .menu-btn.active span:nth-of-type(3) {
+        top: 50%;
+        transform: translate(-50%, 0%) rotate(-45deg);
+    }
+    .link {
+        display: none;
+        visibility: hidden;
+        color: black;
+        font-size: 5px;
+        width: 29%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .main-picture {
+        padding-top: 6%;
+        width: 100%;
+        height: 800px;
+    }
+    .picture {
+        width: 100%;
+        height: 100%;
+        background-image: url(/picture/BUGATTI_Divo_2019_552153_1920x1080.jpg);
+        background-size: cover;
+    }
+    .label {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+    }
+    .oname {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        display: flex;
+        color: rgb(231, 54, 54);
+        justify-content: center;
+        align-items: center;
+        font-size: 44px;
+        width: 100%;
+        height: 33%;
+    }
+    .spis {
+        list-style: square;
+        font-size: 22px;
+        color: rgb(231, 54, 54);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    li {
+        font-weight: 700;
+        margin-bottom: 3%;
+    }
+    .btt {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+    .bt1 {
+        font-weight: 500;
+        background-color: rgb(143, 75, 75);
+        border-radius: 20%;
+        width: 25%;
+        height: 120%;
+        border: 15px;
+    }
+    .bt1:hover {
+        background-color: rgb(231, 54, 54);
+        border-radius: 0%;
+        width: 25%;
+        height: 120%;
+        border: 15px;
+    }
+    .avto {
+        margin-top: 5%;
+        font-size: 35px;
+        display: flex;
+        color: rgb(255, 0, 0);
+        align-items: center;
+        justify-content: center;
+    }
+    .container {
+        margin-left: 1%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .cars {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .block {
+        color: black;
+        background-color: #EDDEA4;
+        border: 2px solid rgb(73, 74, 76);
+        margin-left: 2%;
+        margin-top: 2%;
+        width: 45%;
+        height: 200px;
+    }
+    .block:hover {
+        color: black;
+        background-color: #EDDEA4;
+        border: 3px solid rgb(253, 2, 2);
+        margin-left: 2%;
+        margin-top: 2%;
+        width: 45%;
+        height: 200px;
+    }
+    .part1 {
+        margin: 1% 0% 0% 1%;
+        width: 98%;
+        height: 70%;
+    }
+    .imgggg {
+        width: 100%;
+        height: 100%;
+    }
+    .part2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 30%;
+    }
+    .glname {
+        font-size: 11px;
+    }
+    .glname:hover {
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .name {
+        display: flex;
+        width: 98%;
+        height: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .carek {
+        font-size: 6px;
+        font-weight: 600;
+    }
+    .cost {
+        text-align: center;
+        font-size: 11px;
+        color: rgb(201, 73, 141);
+    }
+    .bt2 {
+        width: 100%;
+        height: 40%;
+        font-size: 9px;
+        background-color: rgb(73, 74, 76);
+        border: 2px solid rgb(201, 73, 141);
+    }
+    .bt2:hover {
+        background-color: rgb(73, 74, 76);
+        border-radius: 5px;
+        border: 2px solid red;
+    }
+    .namecont {
+        margin-top: 3%;
+        margin-bottom: 2%;
+        font-size: 30px;
+        color: black;
+        font-weight: 700;
+        text-align: center;
+    }
+    .podval {
+        margin-top: 3%;
+        width: 100%;
+        height: 170px;
+        background-color: rgb(73, 74, 76);
+    }
+    .osn {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .left {
+        margin-left: 2%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 50%;
+    }
+    .tex {
+        width: 50%;
+        height: 80%;
+    }
+    h2 {
+        font-size: 17px;
+        color: #B5E2FA;
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+    h2:hover {
+        color: red;
+    }
+    .grd {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    .Grodno {
+        font-size: 17px;
+        -webkit-text-stroke: 0.5px red;
+        margin-top: 5%;
+        font-size: 180%;
+        font-weight: 500;
+    }
+    .text1 {
+        font-size: 8px;
+        margin-left: 7%;
+    }
+    .yy {
+        width: 80%;
+        height: 80%;
+    }
+    .yyy {
+        width: 70%;
+        height: 70%;
+    }
+    .mes {
+        margin-left: 1%;
+        width: 100%;
+        height: 30%;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .right {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .icon1 {
+        display: flex;
+        height: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+    .icon2 {
+        display: flex;
+        height: 50%;
+        width: 80%;
+        margin-left: 10%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .element-animation {
+        /* Скроем элемент в начальном состоянии */
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    .element-animation.element-show {
+        opacity: 1;
+        transition: all 3s;
+        transform: translateY(0%);
+    }
 }
