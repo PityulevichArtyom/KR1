@@ -5,13 +5,14 @@
         color: #B5E2FA;
         margin: 0%;
         background-color: #F9F7F3;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: "Russo One", sans-serif;
     }
     a {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: "Russo One", sans-serif;
+        color: #B5E2FA;
     }
     ._head {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: "Russo One", sans-serif;
         background-color: #EDDEA4;
         color: black;
         width: 100%;
@@ -43,6 +44,8 @@
         flex-direction: column;
         justify-content: center;
         width: 20%;
+        
+        font-size: calc(20px + (6 + 6 * 0.7) * ((100vw - 350px) / 1180));
     }
     .link {
         color: black;
@@ -63,6 +66,7 @@
         background: #FFEFBA;
         transform: translateX(-100%);
         transition: transform 0.5s;
+        font-size: calc(20px + (6 + 6 * 0.7) * ((100vw - 350px) / 1180));
     }
     .menu.active {
         transform: translateX(0);
@@ -112,7 +116,7 @@
     .picture {
         width: 100%;
         height: 100%;
-        background-image: url(/picture/BUGATTI_Divo_2019_552153_1920x1080.jpg);
+        background-image: url(picture/BUGATTI_Divo_2019_552153_1920x1080.jpg);
         background-size: cover;
     }
     .label {
@@ -122,20 +126,22 @@
         height: 100%;
     }
     .oname {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: "Russo One", sans-serif;
         display: flex;
-        color: rgb(231, 54, 54);
+        color: #EDDEA4;
+        -webkit-text-stroke: 0.1px #F7A072;
+        font-size: calc(30px + (6 + 10 * 0.7) * ((100vw - 350px) / 300));
         justify-content: center;
         align-items: center;
-        font-size: 44px;
         width: 100%;
         height: 33%;
     }
     .spis {
         list-style: square;
-        font-size: 22px;
-        color: rgb(231, 54, 54);
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: "Russo One", sans-serif;
+        color: #F9F7F3;
+        -webkit-text-stroke: 0.1px  #0FA3B1;
+        font-size: calc(20px + (6 + 6 * 0.7) * ((100vw - 350px) / 1400));
     }
     li {
         font-weight: 700;
@@ -149,14 +155,15 @@
     }
     .bt1 {
         font-weight: 500;
-        background-color: rgb(143, 75, 75);
+        font-size: calc(10px + (6 + 6 * 0.7) * ((100vw - 350px) / 1400));
+        background-color: #0FA3B1;
         border-radius: 20%;
         width: 25%;
         height: 120%;
         border: 15px;
     }
     .bt1:hover {
-        background-color: rgb(231, 54, 54);
+        background-color: #EDDEA4;
         border-radius: 0%;
         width: 25%;
         height: 120%;
@@ -166,7 +173,8 @@
         margin-top: 5%;
         font-size: 35px;
         display: flex;
-        color: rgb(255, 0, 0);
+        color: #EDDEA4;
+        -webkit-text-stroke: 0.5px  #0FA3B1;
         align-items: center;
         justify-content: center;
     }
@@ -312,7 +320,7 @@
         animation-duration: 1s;
     }
     .activeImage {
-        background: rgb(255, 0, 0);
+        background: #EDDEA4;;
         display: flex;
         border-radius: 20px;
     }
@@ -324,7 +332,7 @@
     }
     i.fa.fa-angle-left,
     i.fa.fa-angle-right {
-        color: rgb(255, 0, 0);
+        color: #EDDEA4;;
         font-size: 24px;
         cursor: pointer;
         font-weight: 800;
@@ -342,7 +350,7 @@
     .blockArrow:hover {
         background: rgba(39, 39, 39, 0.59);
         border: 1px solid white;
-        color: rgb(188, 27, 27);
+        color: #EDDEA4;;
         cursor: pointer;
     }
     .blockArrow:active {
@@ -381,7 +389,7 @@
         margin-bottom: 4%;
     }
     h2:hover {
-        color: red;
+        color: #EDDEA4;;
     }
     .grd {
         display: flex;
@@ -390,7 +398,6 @@
         flex-direction: column;
     }
     .Grodno {
-        -webkit-text-stroke: 0.5px red;
         margin-top: 5%;
         font-size: 180%;
         font-weight: 500;
@@ -415,14 +422,15 @@
     .icon1 {
         display: flex;
         height: 50%;
+        margin-top: 10%;
         justify-content: center;
         align-items: center;
     }
     .icon2 {
         display: flex;
-        height: 50%;
-        width: 80%;
-        margin-left: 10%;
+        height: 65%;
+        width: 50%;
+        margin-left: 25%;
         justify-content: space-between;
         align-items: center;
     }
@@ -446,13 +454,13 @@
         color: #B5E2FA;
         margin: 0%;
         background-color: #F9F7F3;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: "Russo One", sans-serif;
     }
     a {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: "Russo One", sans-serif;
     }
     ._head {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: "Russo One", sans-serif;
         background-color: #EDDEA4;
         color: black;
         width: 100%;
@@ -472,6 +480,7 @@
         font-size: calc(8px + (6 + 6 * 0.7) * ((100vw - 350px) / 1180));
     }
     .messenger {
+        flex-direction:column;
         margin-top: 2%;
         margin-left: 1%;
         display: flex;
@@ -500,7 +509,7 @@
         color: black;
     }
     li {
-        color: #de0707;
+        color: #EDDEA4;;
     }
     .menu {
         color: black;
@@ -561,7 +570,7 @@
     .picture {
         width: 100%;
         height: 100%;
-        background-image: url(/picture/BUGATTI_Divo_2019_552153_1920x1080.jpg);
+        background-image: url(picture/BUGATTI_Divo_2019_552153_1920x1080.jpg);
         background-size: cover;
     }
     .label {
@@ -571,9 +580,10 @@
         height: 100%;
     }
     .oname {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: "Russo One", sans-serif;
         display: flex;
-        color: rgb(231, 54, 54);
+        color: #EDDEA4;
+        -webkit-text-stroke: 0.1px #F7A072;
         justify-content: center;
         align-items: center;
         font-size: 22px;
@@ -584,8 +594,9 @@
     .spis {
         list-style: square;
         font-size: 15px;
-        color: rgb(231, 54, 54);
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: "Russo One", sans-serif;
+        color: #F9F7F3;
+        -webkit-text-stroke: 0.1px  #0FA3B1;
     }
     li {
         font-weight: 600;
@@ -599,14 +610,14 @@
     }
     .bt1 {
         font-weight: 500;
-        background-color: rgb(143, 75, 75);
+        background-color: #EDDEA4;
         border-radius: 20%;
         width: 50%;
         height: 120%;
         border: 15px;
     }
     .bt1:hover {
-        background-color: rgb(231, 54, 54);
+        background-color: #EDDEA4;
         border-radius: 0%;
         width: 25%;
         height: 120%;
@@ -616,7 +627,8 @@
         margin-top: 5%;
         font-size: 35px;
         display: flex;
-        color: rgb(255, 0, 0);
+        color: #EDDEA4;
+        -webkit-text-stroke: 0.5x  #0FA3B1;
         align-items: center;
         justify-content: center;
     }
@@ -762,7 +774,7 @@
         animation-duration: 1s;
     }
     .activeImage {
-        background: rgb(255, 0, 0);
+        background: #EDDEA4;;
         display: flex;
         border-radius: 20px;
     }
@@ -774,7 +786,7 @@
     }
     i.fa.fa-angle-left,
     i.fa.fa-angle-right {
-        color: rgb(255, 0, 0);
+        color: #EDDEA4;;
         font-size: 24px;
         cursor: pointer;
         font-weight: 800;
@@ -792,7 +804,7 @@
     .blockArrow:hover {
         background: rgba(39, 39, 39, 0.59);
         border: 1px solid white;
-        color: rgb(188, 27, 27);
+        color: #EDDEA4;;
         cursor: pointer;
     }
     .blockArrow:active {
@@ -832,7 +844,7 @@
         margin-bottom: 4%;
     }
     h2:hover {
-        color: red;
+        color: #EDDEA4;;
     }
     .grd {
         display: flex;
@@ -842,7 +854,6 @@
     }
     .Grodno {
         font-size: 17px;
-        -webkit-text-stroke: 0.5px red;
         margin-top: 5%;
         font-size: 180%;
         font-weight: 500;

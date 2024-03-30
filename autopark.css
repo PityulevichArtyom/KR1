@@ -5,13 +5,13 @@
         color: #B5E2FA;
         margin: 0%;
         background-color: #F9F7F3;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: "Russo One", sans-serif;
     }
     a {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: "Russo One", sans-serif;
     }
     ._head {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: "Russo One", sans-serif;
         background-color: #EDDEA4;
         color: black;
         width: 100%;
@@ -43,6 +43,8 @@
         flex-direction: column;
         justify-content: center;
         width: 20%;
+
+        font-size: calc(20px + (6 + 6 * 0.7) * ((100vw - 350px) / 1180));
     }
     .menu {
         position: fixed;
@@ -112,7 +114,7 @@
     .picture {
         width: 100%;
         height: 100%;
-        background-image: url(/picture/BUGATTI_Divo_2019_552153_1920x1080.jpg);
+        background-image: url(picture/BUGATTI_Divo_2019_552153_1920x1080.jpg);
         background-size: cover;
     }
     .label {
@@ -122,9 +124,9 @@
         height: 100%;
     }
     .oname {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: "Russo One", sans-serif;
         display: flex;
-        color: rgb(231, 54, 54);
+        color: #EDDEA4;
         justify-content: center;
         align-items: center;
         font-size: 44px;
@@ -134,8 +136,8 @@
     .spis {
         list-style: square;
         font-size: 22px;
-        color: rgb(231, 54, 54);
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: #EDDEA4;
+        font-family: "Russo One", sans-serif;
     }
     li {
         font-weight: 700;
@@ -149,14 +151,14 @@
     }
     .bt1 {
         font-weight: 500;
-        background-color: rgb(143, 75, 75);
+        background-color: #EDDEA4;
         border-radius: 20%;
         width: 25%;
         height: 120%;
         border: 15px;
     }
     .bt1:hover {
-        background-color: rgb(231, 54, 54);
+        background-color: #EDDEA4;
         border-radius: 0%;
         width: 25%;
         height: 120%;
@@ -166,7 +168,7 @@
         margin-top: 5%;
         font-size: 35px;
         display: flex;
-        color: rgb(255, 0, 0);
+        color: #EDDEA4;
         align-items: center;
         justify-content: center;
     }
@@ -191,7 +193,7 @@
     .block:hover {
         color: black;
         background-color: #EDDEA4;
-        border: 3px solid rgb(253, 2, 2);
+        border: 3px solid #c7f0f0;
         margin-left: 2%;
         margin-top: 2%;
         width: 30%;
@@ -234,16 +236,18 @@
     .cost {
         text-align: center;
         font-size: 25px;
-        color: rgb(201, 73, 141);
+        color: rgb(152, 221, 253);
+        -webkit-text-stroke: 0.5px #000000; /* Толщина и цвет обводки */
     }
     .bt2 {
-        background-color: rgb(73, 74, 76);
-        border: 2px solid rgb(201, 73, 141);
+        font-family: "Russo One", sans-serif;
+        background-color: rgb(152, 221, 253);
+        border: 1px solid #000000;
     }
     .bt2:hover {
         background-color: rgb(73, 74, 76);
         border-radius: 5px;
-        border: 2px solid red;
+        border: 1px solid #000000;
     }
     .namecont {
         margin-top: 3%;
@@ -283,7 +287,7 @@
         margin-bottom: 4%;
     }
     h2:hover {
-        color: red;
+        color: rgb(198, 250, 253);
     }
     .grd {
         display: flex;
@@ -292,7 +296,7 @@
         flex-direction: column;
     }
     .Grodno {
-        -webkit-text-stroke: 0.5px red;
+        -webkit-text-stroke: 0.5px rgb(0, 0, 0);
         margin-top: 5%;
         font-size: 180%;
         font-weight: 500;
@@ -323,8 +327,8 @@
     .icon2 {
         display: flex;
         height: 50%;
-        width: 80%;
-        margin-left: 10%;
+        width: 50%;
+        margin-left: 25%;
         justify-content: space-between;
         align-items: center;
     }
@@ -347,13 +351,13 @@
         color: #B5E2FA;
         margin: 0%;
         background-color: #F9F7F3;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: "Russo One", sans-serif;
     }
     a {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: "Russo One", sans-serif;
     }
     ._head {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: "Russo One", sans-serif;
         background-color: #EDDEA4;
         color: black;
         width: 100%;
@@ -375,6 +379,7 @@
     .messenger {
         margin-top: 2%;
         margin-left: 1%;
+        flex-direction:column;
         display: flex;
         justify-content: space-between;
         width: 20%;
@@ -384,6 +389,7 @@
         align-items: center;
         flex-direction: column;
         justify-content: center;
+        
         width: 27%;
     }
     .link {
@@ -401,7 +407,7 @@
         color: black;
     }
     li {
-        color: #de0707;
+        color: #FFEFBA;
     }
     .menu {
         color: black;
@@ -472,7 +478,7 @@
     .picture {
         width: 100%;
         height: 100%;
-        background-image: url(/picture/BUGATTI_Divo_2019_552153_1920x1080.jpg);
+        background-image: url(picture/BUGATTI_Divo_2019_552153_1920x1080.jpg);
         background-size: cover;
     }
     .label {
@@ -482,9 +488,9 @@
         height: 100%;
     }
     .oname {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: "Russo One", sans-serif;
         display: flex;
-        color: rgb(231, 54, 54);
+        color: #FFEFBA;
         justify-content: center;
         align-items: center;
         font-size: 44px;
@@ -494,8 +500,8 @@
     .spis {
         list-style: square;
         font-size: 22px;
-        color: rgb(231, 54, 54);
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: #FFEFBA;
+        font-family: "Russo One", sans-serif;
     }
     li {
         font-weight: 700;
@@ -516,7 +522,7 @@
         border: 15px;
     }
     .bt1:hover {
-        background-color: rgb(231, 54, 54);
+        background-color: #FFEFBA;
         border-radius: 0%;
         width: 25%;
         height: 120%;
@@ -526,7 +532,7 @@
         margin-top: 5%;
         font-size: 35px;
         display: flex;
-        color: rgb(255, 0, 0);
+        color: #FFEFBA;
         align-items: center;
         justify-content: center;
     }
@@ -552,7 +558,7 @@
     .block:hover {
         color: black;
         background-color: #EDDEA4;
-        border: 3px solid rgb(253, 2, 2);
+        border: 3px solid #FFEFBA;
         margin-left: 2%;
         margin-top: 2%;
         width: 45%;
@@ -601,11 +607,11 @@
         width: 100%;
         height: 40%;
         font-size: 9px;
-        background-color: rgb(73, 74, 76);
+        background-color: EDDEA4;
         border: 2px solid rgb(201, 73, 141);
     }
     .bt2:hover {
-        background-color: rgb(73, 74, 76);
+        background-color: EDDEA4;
         border-radius: 5px;
         border: 2px solid red;
     }
@@ -648,7 +654,7 @@
         margin-bottom: 4%;
     }
     h2:hover {
-        color: red;
+        color: #B5E2FA;
     }
     .grd {
         display: flex;
@@ -658,7 +664,7 @@
     }
     .Grodno {
         font-size: 17px;
-        -webkit-text-stroke: 0.5px red;
+        -webkit-text-stroke: 0.5px #B5E2FA;
         margin-top: 5%;
         font-size: 180%;
         font-weight: 500;

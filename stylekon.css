@@ -5,13 +5,13 @@
         color: #B5E2FA;
         margin: 0%;
         background-color: #F9F7F3;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: "Russo One", sans-serif;
     }
     a {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: "Russo One", sans-serif;
     }
     ._head {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: "Russo One", sans-serif;
         background-color: #EDDEA4;
         color: black;
         width: 100%;
@@ -43,6 +43,8 @@
         flex-direction: column;
         justify-content: center;
         width: 20%;
+
+        font-size: calc(20px + (6 + 6 * 0.7) * ((100vw - 350px) / 1180));
     }
     .link {
         color: black;
@@ -112,7 +114,7 @@
     .picture {
         width: 100%;
         height: 100%;
-        background-image: url(/picture/BUGATTI_Divo_2019_552153_1920x1080.jpg);
+        background-image: url(picture/BUGATTI_Divo_2019_552153_1920x1080.jpg);
         background-size: cover;
     }
     .label {
@@ -134,7 +136,7 @@
     .spis {
         list-style: square;
         font-size: 22px;
-        color: rgb(231, 54, 54);
+        color: #EDDEA4;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
     li {
@@ -149,14 +151,14 @@
     }
     .bt1 {
         font-weight: 500;
-        background-color: rgb(143, 75, 75);
+        background-color: #EDDEA4;
         border-radius: 20%;
         width: 25%;
         height: 120%;
         border: 15px;
     }
     .bt1:hover {
-        background-color: rgb(231, 54, 54);
+        background-color: #EDDEA4;
         border-radius: 0%;
         width: 25%;
         height: 120%;
@@ -166,7 +168,7 @@
         margin-top: 5%;
         font-size: 35px;
         display: flex;
-        color: rgb(255, 0, 0);
+        color: #EDDEA4;
         align-items: center;
         justify-content: center;
     }
@@ -223,7 +225,7 @@
     .name:hover {
         width: 30%;
         height: 6%;
-        border-color: red;
+        border-color: #EDDEA4;
     }
     .sname {
         width: 30%;
@@ -232,7 +234,7 @@
     .sname:hover {
         width: 30%;
         height: 6%;
-        border-color: red;
+        border-color: rgb(147, 155, 135);
     }
     .tel {
         width: 30%;
@@ -241,7 +243,7 @@
     .tel:hover {
         width: 30%;
         height: 6%;
-        border-color: red;
+        border-color: #EDDEA4;
     }
     .send {
         width: 31.5%;
@@ -250,7 +252,7 @@
     .send:hover {
         background-color: rgb(147, 155, 135);
         border-radius: 15px;
-        border-color: red;
+        border-color: #EDDEA4;
     }
     .map {
         display: flex;
@@ -294,7 +296,7 @@
         margin-bottom: 4%;
     }
     h2:hover {
-        color: red;
+        color: #EDDEA4;
     }
     .grd {
         display: flex;
@@ -303,7 +305,7 @@
         flex-direction: column;
     }
     .Grodno {
-        -webkit-text-stroke: 0.5px red;
+        -webkit-text-stroke: 0.5px #EDDEA4;
         margin-top: 5%;
         font-size: 180%;
         font-weight: 500;
@@ -340,7 +342,6 @@
         align-items: center;
     }
     .element-animation {
-        /* Скроем элемент в начальном состоянии */
         opacity: 0;
         transform: translateY(20px);
     }
@@ -358,13 +359,13 @@
         color: #B5E2FA;
         margin: 0%;
         background-color: #F9F7F3;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: "Russo One", sans-serif;
     }
     a {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: "Russo One", sans-serif;
     }
     ._head {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: "Russo One", sans-serif;
         background-color: #EDDEA4;
         color: black;
         width: 100%;
@@ -412,7 +413,7 @@
         color: black;
     }
     li {
-        color: #de0707;
+        color: #EDDEA4;
     }
     .menu {
         color: black;
@@ -473,7 +474,7 @@
     .picture {
         width: 100%;
         height: 100%;
-        background-image: url(/picture/BUGATTI_Divo_2019_552153_1920x1080.jpg);
+        background-image: url(picture/BUGATTI_Divo_2019_552153_1920x1080.jpg);
         background-size: cover;
     }
     .label {
@@ -483,9 +484,9 @@
         height: 100%;
     }
     .oname {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: "Russo One", sans-serif;
         display: flex;
-        color: rgb(231, 54, 54);
+        color: #EDDEA4;
         justify-content: center;
         align-items: center;
         font-size: 44px;
@@ -495,8 +496,8 @@
     .spis {
         list-style: square;
         font-size: 22px;
-        color: rgb(231, 54, 54);
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: #EDDEA4;
+        font-family: "Russo One", sans-serif;
     }
     li {
         font-weight: 700;
@@ -517,7 +518,7 @@
         border: 15px;
     }
     .bt1:hover {
-        background-color: rgb(231, 54, 54);
+        background-color: #EDDEA4;
         border-radius: 0%;
         width: 25%;
         height: 120%;
@@ -527,7 +528,7 @@
         margin-top: 5%;
         font-size: 35px;
         display: flex;
-        color: rgb(255, 0, 0);
+        color: #EDDEA4;
         align-items: center;
         justify-content: center;
     }
@@ -585,7 +586,7 @@
     .name:hover {
         width: 30%;
         height: 6%;
-        border-color: red;
+        border-color: #EDDEA4;
     }
     .sname {
         width: 30%;
@@ -594,7 +595,7 @@
     .sname:hover {
         width: 30%;
         height: 6%;
-        border-color: red;
+        border-color: #EDDEA4;
     }
     .tel {
         width: 30%;
@@ -604,7 +605,7 @@
     .tel:hover {
         width: 30%;
         height: 6%;
-        border-color: red;
+        border-color: #EDDEA4;
     }
     .send {
         font-size: 10px;
@@ -614,7 +615,7 @@
     .send:hover {
         background-color: rgb(147, 155, 135);
         border-radius: 15px;
-        border-color: red;
+        border-color: #EDDEA4;
     }
     .map {
         display: flex;
@@ -659,7 +660,7 @@
         margin-bottom: 4%;
     }
     h2:hover {
-        color: red;
+        color: #EDDEA4;
     }
     .grd {
         display: flex;
@@ -669,7 +670,7 @@
     }
     .Grodno {
         font-size: 17px;
-        -webkit-text-stroke: 0.5px red;
+        -webkit-text-stroke: 0.5px #EDDEA4;
         margin-top: 5%;
         font-size: 180%;
         font-weight: 500;
@@ -716,7 +717,6 @@
         align-items: center;
     }
     .element-animation {
-        /* Скроем элемент в начальном состоянии */
         opacity: 0;
         transform: translateY(20px);
     }
