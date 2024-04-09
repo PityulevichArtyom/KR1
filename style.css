@@ -18,6 +18,7 @@
         width: 100%;
         height: 13%;
         display: flex;
+        justify-content: space-between;
         margin-left: 0%;
     }
     .kontakt {
@@ -51,7 +52,7 @@
     }
     .link {
         color: black;
-        font-size: 1.2vw;
+        font-size: clamp(0.5rem,1.5vw,3rem);
         width: 40%;
         margin-left: 2%;
         margin-right: 2%;
@@ -75,6 +76,7 @@
     }
     .menu li {
         list-style-type: none;
+        font-size: clamp(1rem,4vw,3rem);
     }
     .menu-btn {
         width: 0%;
@@ -160,15 +162,12 @@
         font-size: 1.3vw;
         background-color: #0FA3B1;
         border-radius: 20%;
-        width: 25%;
-        height: 120%;
         border: 15px;
+        padding: 5px;
     }
     .bt1:hover {
         background-color: #EDDEA4;
-        border-radius: 0%;
-        width: 25%;
-        height: 120%;
+        border-radius: 1%;
         border: 15px;
     }
     .avto {
@@ -617,15 +616,12 @@
         font-weight: 500;
         background-color: #EDDEA4;
         border-radius: 20%;
-        width: 50%;
-        height: 120%;
         border: 15px;
+        padding: 5px;
     }
     .bt1:hover {
         background-color: #EDDEA4;
         border-radius: 0%;
-        width: 25%;
-        height: 120%;
         border: 15px;
     }
     .avto {

@@ -17,6 +17,7 @@
         width: 100%;
         height: 13%;
         display: flex;
+        justify-content: space-between;
         margin-left: 0%;
     }
     .kontakt {
@@ -367,6 +368,7 @@
         width: 100%;
         height: 14%;
         display: flex;
+        
         margin-left: 0%;
     }
     .kontakt {
