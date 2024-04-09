@@ -20,6 +20,7 @@
         margin-left: 0%;
     }
     .kontakt {
+        visibility: hidden;
         margin-top: 3%;
         margin-left: 2%;
         align-items: center;
@@ -36,6 +37,7 @@
         display: flex;
         justify-content: space-between;
         width: 20%;
+        visibility: hidden;
     }
     .main-icon {
         display: flex;
